@@ -1,0 +1,57 @@
+/* .container-fluid{
+
+    background-color: rgb(189, 229, 186);
+} */
+
+#alignHeader{
+    padding-left: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+body{
+    background-color: rgb(250, 249, 249);
+}
+#Menu{
+    padding-left:80px;
+   
+}
+#justif{
+     margin-right: 0px;
+}
+.navbar{
+    background-color: rgb(130, 192, 114) !important;
+    }
+#breadcrumb-item{
+    margin-left:70px;
+}
+
+#margen{
+    margin-top: 0rem;
+    margin-bottom:0px;
+    padding-bottom:0px;
+}
+#turno{
+    margin-top: 30px;
+    margin-bottom:30px;
+    background-color: rgb(228, 222, 222);
+}
+#modificarMedico{
+    background-color: rgb(228, 222, 222);
+}
+form{
+    padding-top:40px;
+    padding-bottom:40px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#tableturnos{
+    margin-top: 40px;
+}
+#headerSAM{
+    padding-bottom:15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-right: 0px;
+    background-color: rgb(173, 240, 171);
+}
