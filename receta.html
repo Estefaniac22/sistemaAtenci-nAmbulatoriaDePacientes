@@ -115,10 +115,10 @@
                   Pacientes
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
-                  <a class="dropdown-item" href="nuevoPaciente.html">Agregar nuevo paciente</a>
-                  <a class="dropdown-item" href="modificarPaciente.html">Modificar datos</a>
-                 <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="bajaPaciente.html">Dar de baja</a>
+                    <a class="dropdown-item" href="nuevoPaciente.html">Agregar nuevo paciente</a>
+                    <a class="dropdown-item" href="modificarPaciente.html">Modificar datos</a>
+                   <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="bajaPaciente.html">Dar de baja</a>
                   
                 </div>
               </li>
@@ -140,11 +140,12 @@
                 </div>
               </li>
             <li class="nav-item">
-                <a class="nav-link" href="centrosSalud.html">Convenios</a>
+              <a class="nav-link" href="centrosSalud.html">Convenios</a>
               </li>  
               <li class="nav-item">
                 <a class="nav-link btn btn-info" href="receta.html">Generar Receta</a>
                 </li>  
+            
             </ul>
           </div>
         </nav>
@@ -157,111 +158,96 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Pacientes</li>
-              <li class="breadcrumb-item active" aria-current="page">Nuevo paciente</li>
+              <li class="breadcrumb-item active" aria-current="page">Generar Receta</li>
             </ol>
           </nav>
       </div>
+
+
       <!--fin Señalador-->
       <div class="container">
         <div class="row">
         <div class="col-md-12">
-          <h1>Alta de pacientes</h1>
-          <p>Ingrese los datos solicitados para dar el alta a nuevos pacientes.</p>
+          <h1>Nueva Receta</h1>
+          <p>Ingrese los datos solicitados para generar una nueva receta en línea.</p>
         </div>
       </div>
       </div>
-     <!-- Nuevo paciente-->
-     <div class="container" id="turno">
-      <div class="row">
-        <div class="col-md-12">
-          <form>
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="inputAddress">Nombre</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Ingrese el Nombre"
-                />
-              </div>
-              <div class="form-group col-md-6">
-    
-                  <label for="inputAddress">Apellido</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Ingrese el Apellido"
-                  />
+        <!-- Nuevo recta-->
+        <div class="container" id="turno">
+          <div class="row">
+            <div class="col-md-12">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-8">
+                    <label for="inputAddress">Nombre y apellido del paciente</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Ingrese el Nombre y apellido del paciente"
+                    />
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="inputAddress">Fecha</label>
+                    <input
+                      type="date"
+                      class="form-control"
+                      placeholder="Ingrese la fecha de nacimiento"
+                    />
+                  </div>
                 </div>
-            </div>
-           <div class="form-row">
-            <div class="form-group col-md-6">
-    
-              <label for="inputAddress">Teléfono</label>
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Ingrese el teléfono"/>
-            </div>
-              <div class="form-group col-md-6">
-                <label for="inputAddress">CUIL</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Ingrese el número de CUIL"/>
-              </div>
-           </div>
-           <div class="form-row">
-            <div class="form-group col-md-8">
-              <label for="obrasocial">Obra Social</label>
-              <select class="form-control">
-                <option selected>Elige obra social...</option>
-                <option>No posee</option>
-                <option>Osep</option>
-                <option>Osecac</option>
-                <option>Osde</option>
-                <option>Boreal</option>
-              </select>
-            </div>
-            <div class="form-group col-md-4">
-              <label> Sexo</label>
-              <select class="form-control">
-                <option>F</option>
-                <option>M</option>
-              </select>
-            </div>
-
-
-
-           </div>
-            <div class="form-row">
-              <div class="form-group col-md-8">
-                <label for="inputAddress">Correo electrónico</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="Ingrese el correo electrónico"/>
-              </div>
+               <div class="form-row">
+                <div class="form-group col-md-12">
+                  <label for="obrasocial">Obra Social</label>
+                  <select class="form-control">
+                    <option selected>Elige obra social...</option>
+                    <option>No posee</option>
+                    <option>Osep</option>
+                    <option>Osecac</option>
+                    <option>Osde</option>
+                    <option>Boreal</option>
+                  </select>
+                </div>
+                 </div> 
+                <div class="form-row">
+                   <div class="form-group col-md-8">
+                    <label for="inputAddress">Medicamento</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Ingrese el medicamento a recetar"/>
+                  </div>
+              
+                
+                  <div class="form-group col-md-4">
+                    <label for="obrasocial">Tipo de dosis</label>
+                    <select class="form-control">
+                      <option selected>Elige la dosis...</option>
+                      <option>1 vez por día</option>
+                      <option>2 veces al día</option>
+                      <option>3 veces al día</option>
+                      <option>4 veces al día</option>
+                  
+                    </select>
+                  </div>
+                </div>
+               <div class="row">
+               
+                <div class="form-group col-md-12">
+                  <label for="exampleFormControlTextarea1">Observaciones</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+               </div>
+             
+                <button type="submit" class="btn btn-primary" onclick="alert('Receta creada exitosamente!')">Generar Receta</button>
+              </form>
            
-               <div class="form-group col-md-4">
-                <label for="inputAddress">Fecha de nacimiento</label>
-                <input
-                  type="date"
-                  class="form-control"
-                  placeholder="Ingrese la fecha de nacimiento"
-                />
-              </div>
-            </div>
-         
-            <button type="submit" class="btn btn-primary" onclick="alert('Paciente creado exitosamente!')">Agregar paciente</button>
-          </form>
-       
-      </div>
+          </div>
+        </div>
     </div>
-</div>
-
-    <!--Fin nuevo paciente-->
+  
+        <!--Fin nuevo medico-->
+    
     </div>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
